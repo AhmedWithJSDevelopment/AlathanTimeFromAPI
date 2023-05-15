@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Athan1City.css">
+
+    <style>
+        body {
+            direction: rtl;
+            background: linear-gradient(45deg, #240165, #05001c);
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        #cityNAMEDate {
+            margin-top: 100px;
+        }
+        
+        #styName {
+            color: aliceblue;
+            margin-right: 40px;
+        }
+        
+        #city-name {
+            font-size: 100px;
+            color: aliceblue;
+            font-weight: 400;
+            animation: colorChangee 2s ease-in-out infinite;
+            /* animation: colorChangee 2s ease-in-out infinite; */
+            /* text-shadow: 2px 10px 10px #000000; */
+        }
+        /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            text-shadow: 2px 10px 10px #000000;
+        }
+        
+        h6 {
+            font-size: 40px;
+            font-weight: 200;
+        }
+        
+        hr {
+            margin: 0px 50px;
+            /* border-color: #5200e1; */
+            /* border-color: linear-gradient(to right, #000, #fff) 10; */
+            border: 1px solid;
+            /* border-image: linear-gradient(to right, #000, #fff) 1;
+    border-image: linear-gradient(to right, #f809e0, #fdd835) 1;
+    border-image: linear-gradient(to right, #6117e1, #fdd835) 1; */
+            /* border-image: linear-gradient(to right, #6117e1, #fdd835, #fff, #f809e0, #49e60b, #0ba8e6, #7b32e842, #f809e0, #fdd835, #6117e1, #fdd835, #fff, #f809e0, #49e60b, #0ba8e6, #7b32e842, #f809e0) 1; */
+            animation: colorChangee 2s ease-in-out infinite;
+        }
+        
+        @keyframes colorChangee {
+            0% {
+                color: #f809e0;
+            }
+            25% {
+                color: #0ba8e6;
+            }
+            50% {
+                color: #e11761;
+            }
+            75% {
+                color: #fdd835;
+            }
+            100% {
+                color: #49e60b;
+            }
+        }
+        
+        .container {
+            height: 100vh;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: 1fr;
+            /* background-color: aliceblue; */
+            font-size: 20px;
+            /* box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.30); */
+            height: 300px;
+            margin-top: 30px;
+            /* justify-content: space-around; */
+            gap: 20px;
+        }
+        
+        .card {
+            background-color: rgba(240, 248, 255, 0.118);
+            background-color: #ffffff;
+            color: aliceblue;
+            animation: colorChangee 2s ease-in-out infinite;
+        }
+        
+        .select {
+            margin-top: 40px;
+        }
+        /* ::marker {
+    background: transparent;
+} */
+        
+        select {
+            width: 300px;
+            height: 35px;
+            font-size: 25px;
+            font-family: 'Tajawal', sans-serif;
+            background: none;
+            color: aliceblue;
+            padding: 3px;
+            border-radius: 20px;
+            animation: colorChangee 2s ease-in-out infinite;
+            /* background-color: transparent; */
+        }
+        
+        select option {
+            /* background-color: rgba(0, 0, 0, 0); */
+            background: none;
+            /* background: transparent; */
+            color: rgb(7, 127, 232);
+            background-color: transparent;
+            border: none;
+            outline: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            /* background-color: rgba(19, 10, 82, 0.7); */
+        }
+        
+        .grid-item-1 {
+            grid-row: 1;
+            grid-column: 1;
+            /* height: 95%; */
+        }
+        
+        .grid-item-2 {
+            grid-row: 1;
+            grid-column: 2;
+        }
+        
+        .grid-item-3 {
+            grid-row: 1;
+            grid-column: 3;
+        }
+        
+        .grid-item-4 {
+            grid-row: 1;
+            grid-column: 4;
+        }
+        
+        .grid-item-5 {
+            /* background-color: aliceblue; */
+            grid-row: 1;
+            grid-column: 5;
+        }
+        
+        .grid-item-6 {
+            grid-row: 1;
+            grid-column: 6;
+        }
+        
+        .header {
+            background: linear-gradient(45deg, #5709ee, #7a37bf);
+            animation: colorChangee 2s ease-in-out infinite;
+            /* color: aliceblue; */
+        }
+        
+        .header h1 {
+            color: aliceblue;
+            font-weight: 400;
+            padding: 5px;
+            animation: colorChangee 2s ease-in-out infinite;
+        }
+        
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: aliceblue; */
+        }
+        
+        .body {
+            height: 80%;
+        }
+        
+        .time {
+            font-size: 70px;
+        }
+    </style>
+
+
+
+
+</head>
+<!--  -->
+<!-- //// -->
+
+
+<body>
+    <div id="container">
+
+        <div id="cityNAMEDate">
+            <!-- cityNAME -->
+
+            <div id="styName">
+                <h1 id="city-name">ذي قار</h1>
+                <h6 id="date">الجمعة 24 ايار</h6>
+            </div>
+            <!-- //cityNAME// -->
+            <hr>
+            <!-- PRAYER TIMings -->
+
+
+            <div class="grid-container  ">
+                <div class="card  grid-item-1">
+
+                    <div class="header center">
+
+                        <h1>الفجر</h1>
+                    </div>
+                    <div class="body  center">
+
+                        <h1 class="time" id="fajer-time">4:30</h1>
+                    </div>
+                </div>
+                <div class="card  grid-item-2">
+
+                    <div class="header center">
+
+                        <h1>الشروق</h1>
+                    </div>
+                    <div class="body  center">
+
+                        <h1 class="time" id="sunrise-time">4:30</h1>
+                    </div>
+                </div>
+                <div class="card  grid-item-3">
+
+                    <div class="header center">
+
+                        <h1>الظهر</h1>
+                    </div>
+                    <div class="body  center">
+
+                        <h1 class="time" id="duhr-time">4:30</h1>
+                    </div>
+                </div>
+                <div class="card  grid-item-4">
+
+                    <div class="header center">
+
+                        <h1>العصر</h1>
+                    </div>
+                    <div class="body  center">
+
+                        <h1 class="time" id="asr-time">4:30</h1>
+                    </div>
+                </div>
+                <div class="card  grid-item-5">
+
+                    <div class="header center">
+
+                        <h1>المغرب</h1>
+                    </div>
+                    <div class="body  center">
+
+                        <h1 class="time" id="sunset-time">4:30</h1>
+                    </div>
+                </div>
+
+                <div class="card  grid-item-6">
+
+                    <div class="header center">
+
+                        <h1>العشاء</h1>
+                    </div>
+                    <div class="body  center">
+
+                        <h1 class="time" id="isha-time">4:30</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- //PRAYER TIMings// -->
+            <!-- CHANGE city SELECT -->
+
+            <div class="center select">
+
+                <select name="" id="city-select" title="select">
+
+<!-- <option value="الرياض">الرياض </option>
+<option value="الرياض">الشرقية</option>
+<option value="الرياض">مكة  </option> -->
+
+
+
+                </select>
+
+
+            </div>
+            <!-- //CHANGE  city SELECT// -->
+
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- <script src="node_modules/axios/dist/axios.min.js"></script> -->
+
+<script src="./node_modules/axios/dist/axios.min.js"></script>
+
+<script>
+    let cities = [{
+        arabicName: " ذي قار",
+        isoName: "Dhī Qār"
+
+    }, {
+        arabicName: " البصرة",
+        isoName: "Al Başrah"
+
+    }, {
+        arabicName: " بغداد",
+        isoName: "Baghdād"
+
+    }, {
+        arabicName: " النجف",
+        isoName: "An Najaf"
+
+    }, {
+        arabicName: " بابل",
+        isoName: "Bābil"
+
+    }, {
+        arabicName: " المثنى",
+        isoName: "Al Muthanná"
+
+    }, {
+        arabicName: " واسط",
+        isoName: "Wāsiţ"
+
+    }, {
+        arabicName: " دهوك",
+        isoName: "Dahūk"
+
+    }, {
+        arabicName: " ميسان",
+        isoName: "Maysān"
+
+    }, {
+        arabicName: " صلاح الدين",
+        isoName: "	Şalāḩ ad Dīn"
+
+    }, {
+        arabicName: " نينوى",
+        isoName: "Nīnawá"
+
+    }, {
+        arabicName: " سليمانية",
+        isoName: "As Sulaymānīyah"
+
+    }]
+    for (let city of cities) {
+        let content = `
+         <option    value="${city.arabicName}"> ${city.arabicName} </option>
+            `
+        fillplass("city-select", content)
+            //= document.getElementById("city-select").innerHTML += content
+
+
+    }
+    document.getElementById("city-select").addEventListener("change", function() {
+
+
+
+        document.getElementById("city-name").innerHTML = this.value
+        let cityName = ""
+        for (let city of cities) {
+            if (city.arabicName == this.value) {
+                cityName = city.isoName
+            }
+
+        }
+        // document.getElementById("city-name").innerHTML = this.value
+
+        console.log(this.value)
+        getPrayersTimingsOfCity(cityName)
+
+    });
+
+
+
+    function getPrayersTimingsOfCity(cityName) {
+        let params = {
+            country: "IQ",
+            city: cityName //"Dhī Qār"
+        }
+        axios.get('http://api.aladhan.com/v1/timingsByCity', {
+                params: params
+            })
+            .then(function(response) {
+
+                const timings = response.data.data.timings;
+                // document.getElementById("fajer-time").innerHTML = timings
+                fillTimeForPrayer("fajer-time", timings.Fajr)
+                fillTimeForPrayer("sunrise-time", timings.Sunrise)
+                fillTimeForPrayer("duhr-time", timings.Dhuhr)
+                fillTimeForPrayer("asr-time", timings.Asr)
+                fillTimeForPrayer("sunset-time", timings.Sunset)
+                fillTimeForPrayer("isha-time", timings.Isha)
+
+                const redableDate = response.data.data.date.gregorian.date;
+                const weekDay = response.data.data.date.hijri.weekday.ar;
+                const data = weekDay + " " + redableDate
+                fillTimeForPrayer("date", data)
+
+
+            })
+            .catch(function(error) {
+                console.log(error);
+            });
+    }
+
+
+
+    getPrayersTimingsOfCity("Dhī Qār")
+
+    function fillTimeForPrayer(id, time) {
+        document.getElementById(id).textContent = time
+
+    }
+
+    function fillplass(id, timee) {
+        document.getElementById(id).innerHTML += timee
+
+    }
+</script>
+
+</html>
